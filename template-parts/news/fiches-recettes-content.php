@@ -70,6 +70,6 @@
         overflow: auto;
         position: -webkit-sticky;
         position: sticky;
-        top: 12%;
+        top: 10%;
     }
 </style>
