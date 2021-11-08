@@ -1,0 +1,649 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaef;
+}
+
+/* font and size */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: aqua;
+}
+
+.h4 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 4.5em;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-weight: 900;
+    margin-bottom: -12px;
+}
+
+header {
+    top: 0 !important;
+    display: flex;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.slider.d-block.w-100.about {
+    height: 450px;
+    object-fit: cover;
+}
+
+footer#footerHomeMade {
+    background-color: #421416;
+    width: 100%;
+    bottom: 0;
+}
+
+/* NavBar */
+.navbar {
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    padding: .5rem 1rem;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background-color: white;
+}
+
+div#navbarSupportedContent {
+    width: 100%;
+    display: flex;
+    z-index: 99999;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+li.nav-item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+.information-nutri {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    background-color: white;
+    padding: 20px;
+}
+
+.information-ingredient {
+    font-size: 0.9rem;
+    color: white;
+    background-color: #323237;
+    padding: 20px;
+}
+
+.information-nutri--timer {
+    display: flex;
+}
+
+.information-nutri--calories {
+    display: flex;
+}
+
+i.far.fa-clock,
+i.fas.fa-burn {
+    font-size: 1.6rem;
+    color: #fe931d;
+    width: 25px;
+    text-align: center;
+}
+
+.information-ingredient ul {
+    margin: 0 0 1.5em -1.9em;
+}
+
+.title-ingredient {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text-ingredient {
+    font-size: 1rem;
+    color: #4A4A4A;
+    margin-right: 20px;
+}
+
+p.subtitle-ingredient {
+    text-align: center;
+}
+
+.container-recettes {
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navfull {
+    display: flex;
+    width: 100%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 3em !important;
+}
+
+img.attachment-single-post-thumbnail.size-single-post-thumbnail.wp-post-image {
+    height: 240px !important;
+    object-fit: cover !important;
+    width: 100%;
+}
+
+ul#menu-menu-infine a {
+    text-transform: uppercase;
+    margin: 0px 33px 0px 23px;
+    width: 100%;
+}
+
+li#menu-item-186 {
+    display: flex;
+    justify-content: center;
+}
+
+ul#menu-menu-infine {
+    list-style-type: none;
+    display: contents;
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
+    width: 100%;
+}
+
+.release {
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.25em;
+    color: #4A4A4A;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 58px;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+p.text-news {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+p.news {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: left;
+}
+
+h5.fronttitle {
+    width: fit-content;
+    background-color: #ffffffcc;
+    font-family: 'IBM Plex Sans';
+    line-height: 1;
+    margin-left: 0px;
+    font-size: 3.5rem;
+    border-radius: 40px;
+}
+
+button.btn.btn-newsletter {
+    font-size: 0.8em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    background: linear-gradient(40deg, #fd6900, #ebc046) !important;
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    border: none;
+    color: white;
+}
+
+span.recette-single {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+p.texttitle {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #353535;
+    background-color: white;
+    width: fit-content;
+    padding: 0px 15px 0px 15px;
+    border-radius: 40px;
+}
+
+.card-img-top {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-height: 352px;
+    object-fit: cover;
+}
+
+/* Links */
+a.al {
+    font-size: 0.85em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #959595;
+}
+
+a.al:hover {
+    color: #959595;
+}
+
+a.al:visited {
+    color: #959595;
+}
+
+a.artist {
+    font-size: .98rem;
+    color: #7f7f7f;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+a.news {
+    font-size: 0.7em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7f7f7f;
+    font-weight: 400;
+}
+
+/* card cover */
+.cover {
+    border: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 100;
+    position: relative;
+}
+
+/* card artistes */
+.card-body {
+    line-height: 1.2;
+    border-bottom: 1px solid #fac000;
+    padding: 28px 10px 10px 10px;
+}
+
+span.news-single {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+span.tagtitle {
+    border: 1px solid white;
+    padding: 6px 20px 6px 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+span.news {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+span.fa.fa-search {
+    color: rgba(0, 0, 0, .5);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+span.text-news {
+    font-size: 0.9em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    align-items: center;
+    height: 220px;
+    display: flex;
+    align-content: center;
+}
+
+
+span.legend {
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.past-tag {
+    font-size: 1.3em;
+    color: #353535;
+    letter-spacing: 1px;
+    padding: 1px 1px 1px 1px;
+}
+
+
+.tagartistes {
+    position: absolute;
+    top: 65%;
+    right: 47.5%;
+}
+
+.tagfiches {
+    position: absolute;
+    top: 80%;
+    right: 45%;
+}
+
+/* Banner artistes */
+
+.background-banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.background-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i.fa.fa-chevron-right {
+    font-size: 2em;
+}
+
+/* Banner Home-page */
+img.slider.d-block.w-100 {
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 20%;
+    z-index: 10;
+    top: 35%;
+}
+
+.carousel-caption .fiche {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    margin-top: 0px;
+    color: #fff;
+    text-align: center;
+    top: 20%;
+}
+
+.carousel-caption-about {
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 420px;
+    z-index: 10;
+    margin-top: 175px;
+    color: #fff;
+    text-align: left;
+    top: 15%;
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+    font-size: 3em;
+    opacity: unset;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    width: 240px;
+    vertical-align: middle;
+}
+
+/* Margin Top */
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+p.card-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.card-deck .card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.no-border {
+    border: none;
+}
+
+/* card search template */
+p.the_excerpt {
+    margin-bottom: 0px;
+}
+
+article {
+    padding: 10px;
+}
+
+/* Modal */
+div#myModal {
+    width: 350px;
+}
+
+.modal-backdrop.show {
+    opacity: 0.85;
+}
+
+.modal-header .close {
+    padding: 1rem 0rem;
+    margin: -1rem 0rem -1rem 0;
+}
+
+.searchbox {
+    border: 1px solid white;
+    margin-top: 1em;
+    border-radius: 1px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    display: inline-block;
+    padding: 8px 42px 8px 42px !important;
+}
+
+.searchbox:hover {
+    color: white;
+}
+
+.close:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    border: 0px;
+}
+
+.modal-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-body form {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+}
+
+.modal-content .close {
+    opacity: 1;
+    font-size: 30px;
+}
+
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image:hover {
+    opacity: 0.8;
+}
+
+
+/* News */
+img.bannernews {
+    height: 500px;
+    object-fit: cover;
+}
+
+img.albumnews {
+    height: 270px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+}
+
+/* Footer */
+.footer-copyright.text-center.py-3 {
+    font-size: 0.8em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}

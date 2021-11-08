@@ -1,0 +1,109 @@
+@media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+    div#myModal {
+        width: 100%;
+    }
+
+    .release_info_news {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    ul.navbar-nav.mr-auto {
+        display: list-item;
+        text-align: center;
+    }
+
+    iframe.Newsletter-home {
+        height: 327px;
+        border-radius: 10px;
+    }
+
+    .past-tag {
+        width: 43%;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 0;
+    }
+
+    .nav-link.artist {
+        font-size: 0.95em;
+    }
+
+    .card.twitter {
+        margin: 25px;
+    }
+
+    img.slider.d-block.w-100 {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    h5 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .card-img-overlay {
+        top: 15%;
+    }
+
+    ul.navbar-nav.mr-5 {
+        margin-right: 0px !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: unset;
+        bottom: 3rem;
+        z-index: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+
+    a.al {
+        font-size: 0.8em;
+    }
+
+    p.texttitle {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-family: roboto;
+        color: #353535;
+        line-height: 1;
+    }
+
+    .carousel-caption-about {
+        position: absolute;
+        margin-top: 0;
+        left: 67px;
+        z-index: 10;
+        color: #fff;
+        text-align: left;
+        top: 29%;
+    }
+
+    .cross {
+        left: 169px !important;
+    }
+}
