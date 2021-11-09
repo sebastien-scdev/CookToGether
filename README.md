@@ -54,6 +54,9 @@ https://kinsta.com/fr/blog/wp-cli/
 Vous trouverez ci-joint un tutoriel plutôt bien fait qui vous expliquer step by step le processus.
 Bonne lecture
 https://github.com/sebastien-scdev/CookToGether
+
+Lien de téléchargement du fichier .zip
+https://github.com/sebastien-scdev/CookToGether/releases/tag/v1.0.0
 ```
 
 ```html
