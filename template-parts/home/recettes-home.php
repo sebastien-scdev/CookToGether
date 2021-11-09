@@ -1,9 +1,9 @@
 <section>
-<div class="container mt-4">
-    <h4 class="text-left mt-5 release"> LES RECETTES <span class="font-italic">by</span> HOME MADE </h4>
-    <hr>
+    <div class="container mt-4">
+        <h1 class="text-left mt-5 release"> LES RECETTES <span class="font-italic">by</span> HOME MADE </h1>
+        <hr>
 
-	<?php
+        <?php
 	$queried_object = get_queried_object();
 	$term_id = $queried_object->term_id;
 
@@ -24,7 +24,7 @@ if (count($categories) > 0) :
 
         <div class="<?= $defaultClass ?> animated fadeInUp news-categories no-padding">
             <div class="row">
-                    <?php
+                <?php
                     $args = [
                         'post_type' => 'recettes',
                         'posts_per_page' => '100',
@@ -104,8 +104,8 @@ if (count($categories) > 0) :
                         echo '</div>';
                     endwhile;
                     ?>
-                </div>
-                <?php
+            </div>
+            <?php
                 if ($postNum > $maxVisiblePosts) {
                         echo <<<SCRIPT
                      <script>
@@ -136,133 +136,126 @@ HTML;
         </div>
         <?php $count++;
     endforeach;
-endif; ?>
-</div>
-<section>
+    endif; ?>
+    </div>
+    <section>
 
-<style>
-.btn-floating {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    padding: 0;
-    margin: 10px;
-    overflow: hidden;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
-    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    width: 44px;
-    height: 44px;
-}
+    <style>
+            .btn-floating {
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                padding: 0;
+                margin: 10px;
+                overflow: hidden;
+                vertical-align: middle;
+                cursor: pointer;
+                border-radius: 50%;
+                -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+                box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                width: 44px;
+                height: 44px;
+            }
 
-.waves-effect {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-}
+            .waves-effect {
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
+            }
 
-.btn-floating i {
-    display: inline-block;
-    width: inherit;
-    color: #fff;
-    text-align: center;
-}
+            .btn-floating i {
+                display: inline-block;
+                width: inherit;
+                color: #fff;
+                text-align: center;
+            }
 
-a.btn-floating.btn-sm.orange-gradient {
-    position: absolute;
-    bottom: 20%;
-    right: 40%;
-    z-index: 4;
-}
+            a.btn-floating.btn-sm.orange-gradient {
+                position: absolute;
+                bottom: 20%;
+                right: 40%;
+                z-index: 4;
+            }
 
-@media only screen 
-  and (max-device-width: 1200px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    a.btn-floating.btn-sm.orange-gradient {
-    position: absolute;
-    bottom: 25%;
-    right: 36%;
-    z-index: 4;
-    }
-}
+            @media only screen and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+                a.btn-floating.btn-sm.orange-gradient {
+                    position: absolute;
+                    bottom: 25%;
+                    right: 36%;
+                    z-index: 4;
+                }
+            }
 
-@media only screen 
-  and (max-device-width: 990px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    a.btn-floating.btn-sm.orange-gradient {
-    position: absolute;
-    bottom: 10%;
-    right: 46%;
-    z-index: 4;
-    }
-}
+            @media only screen and (max-device-width: 990px) and (-webkit-min-device-pixel-ratio: 1) {
+                a.btn-floating.btn-sm.orange-gradient {
+                    position: absolute;
+                    bottom: 10%;
+                    right: 46%;
+                    z-index: 4;
+                }
+            }
 
-@media only screen 
-  and (max-device-width: 768px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    a.btn-floating.btn-sm.orange-gradient {
-    bottom: 15%;
-    }
-}
+            @media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+                a.btn-floating.btn-sm.orange-gradient {
+                    bottom: 15%;
+                }
+            }
 
-@media only screen 
-  and (max-device-width: 414px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    a.btn-floating.btn-sm.orange-gradient {
-    bottom: 15%;
-    right: 42%;
-    }
-    h5.fronttitle {
-    width: fit-content;
-    background-color: #ffffffcc;
-    font-family: 'IBM Plex Sans';
-    line-height: 1;
-    margin-left: 0px;
-    font-size: 2rem;
-    border-radius: 40px;
-    }
-}
+            @media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 1) {
+                a.btn-floating.btn-sm.orange-gradient {
+                    bottom: 15%;
+                    right: 42%;
+                }
 
-.btn-floating:hover {
-    -webkit-box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-    box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-}
+                h5.fronttitle {
+                    width: fit-content;
+                    background-color: #ffffffcc;
+                    font-family: 'IBM Plex Sans';
+                    line-height: 1;
+                    margin-left: 0px;
+                    font-size: 2rem;
+                    border-radius: 40px;
+                }
+            }
 
-.btn-floating.btn-sm i {
-    font-size: 1.2rem;
-    line-height: 48px;
-}
+            .btn-floating:hover {
+                -webkit-box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+                box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            }
 
-.orange-gradient {
-    background: linear-gradient(40deg,#fd6900,#ebc046) !important;
-}
+            .btn-floating.btn-sm i {
+                font-size: 1.2rem;
+                line-height: 48px;
+            }
 
-.info {
-    position: absolute;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(0px);
-    transition: 0.5s;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 90px 10px 60px 10px;
-}
+            .orange-gradient {
+                background: linear-gradient(40deg, #fd6900, #ebc046) !important;
+            }
 
-.info:hover {
-    opacity: 1;
-    transform: translateY(0px);
-    background: #fe931db8;
-}
-</style>
+            .info {
+                position: absolute;
+                z-index: 3;
+                color: white;
+                opacity: 0;
+                transform: translateY(0px);
+                transition: 0.5s;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                padding: 90px 10px 60px 10px;
+            }
+
+            .info:hover {
+                opacity: 1;
+                transform: translateY(0px);
+                background: #fe931db8;
+            }
+        </style>
