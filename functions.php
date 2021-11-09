@@ -235,3 +235,17 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
 
+// Supprimer les elements inutiles du menu
+function remove_menu_items() {
+	global $menu;
+	$restricted = array(__('Articles'), __('Comments'));
+	end ($menu);
+	while (prev($menu)){
+	$value = explode(' ',$menu[key($menu)][0]);
+	
+	if (in_array($value[0] != NULL?$value[0]:"" , $restricted)){
+		unset($menu[key($menu)]);}
+	}
+}
+add_action('admin_menu', 'remove_menu_items');
+
