@@ -75,7 +75,7 @@ Show Current Template : Version 0.4.6
 #### librairies utilisées
 ```html
 Bootsrap : version 4.12 (petit bug sur la version 5 avec les spacer)
-Font-awesome : version 6
+Font-awesome : version 5.15.4
 ```
 
 ## TODO
