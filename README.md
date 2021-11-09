@@ -53,9 +53,14 @@ https://kinsta.com/fr/blog/wp-cli/
 ```html
 Vous trouverez ci-joint un tutoriel plutôt bien fait qui vous expliquer step by step le processus.
 Bonne lecture
-https://45royale.com/blog/wordpress-github
+https://github.com/sebastien-scdev/CookToGether
 ```
 
+```html
+A savoir :
+J'ai fait quelques petites personnalisation du back-office (on peut encore aller plus loin bien sur).
+Le code se trouve dans le fichier function.php
+```
 
 ## Plugins et librairies utilisées
 
@@ -80,6 +85,4 @@ Font-awesome : version 6
 - Exclure sur la partie admin les modules inutilisé via le fichier de function, et personnaliser au maximum le backoffice pour limiter les problêmes d'erreurs   générer par les utilisateurs (Gestion des autorisations et des Rôles)
 - Mettre en place un google Analytics via lien externe ou directement avec un plugin prévu a cet effet
 - Réflexion sur la partie inscription et pourquoi ne pas envisager des systêmes d'abonnements et/ou réduction sur des produits via des partenariats avec des entitées cullinaires
-
 ```
-

@@ -248,4 +248,3 @@ function remove_menu_items() {
 	}
 }
 add_action('admin_menu', 'remove_menu_items');
-
