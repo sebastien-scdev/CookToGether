@@ -20,7 +20,7 @@ require_once('wp-bootstrap-navwalker.php');
 function wpc_main_nav() {
     wp_nav_menu(
         array(
-            'menu_id'        => 'nav',
+            'menu_id'           => 'nav',
             'container'         => false,
             'theme_location'    => 'main',
             'depth'             => '1',
@@ -35,15 +35,16 @@ add_action( 'after_setup_theme', 'mytheme_post_thumbnails' );
 
 // Register a new sidebar simply named 'sidebar'
 function add_widget_Support() {
-                register_sidebar( array(
-                                'name'          => 'Sidebar',
-                                'id'            => 'sidebar',
-                                'before_widget' => '<div>',
-                                'after_widget'  => '</div>',
-                                'before_title'  => '<h2>',
-                                'after_title'   => '</h2>',
-                ) );
-}
+  register_sidebar( array(
+    'name'          => 'Sidebar',
+    'id'            => 'sidebar',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+    ) );
+  }
+
 // Hook the widget initiation and run our function
 add_action( 'widgets_init', 'add_Widget_Support' );
 
@@ -51,9 +52,9 @@ add_action( 'widgets_init', 'add_Widget_Support' );
 function add_Main_Nav() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
+
 // Hook to the init action hook, run our navigation menu function
 add_action( 'init', 'add_Main_Nav' );
-
 
 /* Kill Gutenberg */
 add_filter('use_block_editor_for_post', '__return_false', 10);
